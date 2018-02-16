@@ -1,0 +1,48 @@
+
+
+****************************************
+SELECT count(T1.[ItemCode])AS total,T1.[ItemCode] AS codigo,
+(case when T1.[ItemCode] = 0800035 then 'Radio' else 'Fibra' end )AS Tecnologia,
+(case when T3.[U_FLX_Usage] = 16 then 'PJ' else 'PF' end)AS Tipo,
+(SELECT T5.[Name] FROM OCNT T5
+      WHERE T5.[AbsId] =  T2.[County]) AS Cidade,
+DATENAME(MONTH, T0.[DocDate]) as Mes
+FROM OINV T0  INNER JOIN INV1 T1 ON T0.[DocEntry] = T1.[DocEntry] 
+INNER JOIN INV12 T2 ON T0.[DocEntry] = T2.[DocEntry] 
+INNER JOIN OCRD T3 ON T0.[CardCode] = T3.[CardCode] 
+INNER JOIN CRD1 T4 ON T3.[CardCode] = T4.[CardCode] 
+WHERE T0.[CardCode] like 'C%'
+and  T1.[ItemCode] in (0800035,0800036)
+and T0.[BPLId] >1
+and  T0.[CANCELED] ='N'
+and  T0.[DocDate] > {?DateInicio}
+and  T0.[DocDate] < {?DateFim}
+GROUP BY YEAR(T0.[DocDate]),MONTH(T0.[DocDate]),T2.[County],T3.[U_FLX_Usage],T1.[ItemCode],DATENAME(MONTH, T0.[DocDate])
+
+****************************************
+
+
+
+
+(not HasValue({?cidade@SELECT name+', '+state  FROM OCNT T0})
+
+
+(a) por cidade; 
+(b) por tecnologia (Radio x Fibra); e 
+(c) por tipo de clientes (Pessoa F�sica x Pessoa Jur�dica)
+
+
+
+
+
+
+
+
+
+ (a) por cidade -> ok select separado
+(b) por tecnologia (Radio x Fibra) -> ok
+(c) (Pessoa F�sica x Pessoa Jur�dica) -> ok
+
+
+(SELECT T5.[Name] FROM OCNT T5
+      WHERE T5.[AbsId] =  T2.[County]) AS Cidade

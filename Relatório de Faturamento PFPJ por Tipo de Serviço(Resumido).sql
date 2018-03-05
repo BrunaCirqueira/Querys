@@ -6,7 +6,7 @@ select  A.[Cidade],A.[Item],A.[Filial],
 
 [Total Faturado] =SUM(A.[Total Faturado_]),
 
-[Ticket] =SUM(A.[Ticket_])
+[Ticket] =SUM(A.[Total Faturado_])/sum(A.[TotalL Pessoa_])
 
 
 from (SELECT
@@ -20,9 +20,9 @@ from (SELECT
 
 [TotalL Pessoa_] =COUNT(CASE WHEN T0.[U_FLX_Usage] =15  THEN 1 WHEN T0.[U_FLX_Usage] =16  THEN 1 ELSE 0 END),
 
-[Total Faturado_] =SUM(CASE WHEN T0.[U_FLX_Usage] in (15,16) THEN T2.[LineTotal] ELSE NULL END),
+[Total Faturado_] =SUM(CASE WHEN T0.[U_FLX_Usage] in (15,16) THEN T2.[LineTotal] ELSE NULL END)--,
 
-[Ticket_] =SUM(CASE WHEN T0.[U_FLX_Usage]  in (15,16) THEN [LineTotal] ELSE null END)/COUNT(CASE WHEN T0.[U_FLX_Usage] in (15,16) THEN 1 ELSE null END)
+--[Ticket_] =SUM(CASE WHEN T0.[U_FLX_Usage]  in (15,16) THEN [LineTotal] ELSE null END)/COUNT(CASE WHEN T0.[U_FLX_Usage] in (15,16) THEN 1 ELSE null END)
          
 FROM 
 

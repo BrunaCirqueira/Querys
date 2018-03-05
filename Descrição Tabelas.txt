@@ -1,0 +1,13 @@
+OCNT -> Dados da Cidade 
+OACT -> Dados de Conta
+OSTA -> Dados de Conta (usado em conta de imposto(pis/cofins))
+ABPL -> Filial
+OCRD -> Parceiro de Negocio
+OITM -> Itens
+OINV -> Nota Fiscal de Saida 
+OJDT -> Lançamento Contabil Manual 
+OUSR -> Usuarios
+OPCH -> Nota Fiscal de Entrada 
+OVPM -> Contas Pagas
+OHEM -> Dados do Funcionario
+

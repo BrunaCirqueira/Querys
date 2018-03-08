@@ -1,0 +1,39 @@
+%%%%ShowDescOnly	0
+-1	Todas as transações
+16	Devoluções
+203	Adiantamento de cliente
+15	Entrega
+13	Nota Fiscal de Saída
+14	Dev.Nota Fiscal Saída
+20	Recebimento de mercadorias
+21	Devolução de mercadorias
+204	Adiantamento para fornecedor
+18	Nota Fiscal de Entrada
+19	Dev.Nota Fiscal Entrada
+69	Despesas de importação
+24	Contas a receber
+25	Depósito
+46	Pagamento ao fornecedor
+57	Cheques para pagamento
+76	Depósito pré-datado
+182	Transação boleto
+-2	Saldo inicial
+-3	Saldo final
+321	Reconciliação interna
+10000046	Arquivo de dados
+30	Lançamento contábil manual
+58	Lista do estoque
+59	Entrada de mercadoria
+60	Saída de mercadorias
+67	Transferências de estoque
+68	Instruções de produção
+162	Avaliação de estoque
+202	Ordem de produção
+1470000049	Capitalização de ativo fixo
+1470000060	Nota de crédito de capitalização de ativo fixo
+1470000094	Baixa do ativo fixo
+1470000075	Depreciação manual de ativo fixo
+1470000090	Transferência de ativo fixo
+1470000085	Reavaliação de ativos fixos
+310000001	Saldo inicial do inventário
+10000071	Lançamento de estoque

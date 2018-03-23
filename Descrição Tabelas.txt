@@ -11,3 +11,5 @@ OPCH -> Nota Fiscal de Entrada
 OVPM -> Contas Pagas
 OHEM -> Dados do Funcionario
 
+ = '[%0]' - Coringa para mostrar as ooções da variavel 
+

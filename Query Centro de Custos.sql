@@ -8,7 +8,7 @@ SELECT  DISTINCT
                 [ContaContabil] =   T1.[Account],
                 [Valor] = T1.[Debit], 
                 [OrigemTrans] =  T1.[TransType],
-               [NomeContaContabi] = T4.[AcctName]
+                [NomeContaContabi] = T4.[AcctName]
 
                
 FROM

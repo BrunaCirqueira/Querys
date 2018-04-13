@@ -13,3 +13,9 @@ OHEM -> Dados do Funcionario
 
  = '[%0]' - Coringa para mostrar as ooções da variavel 
 
+
+ Ativo = O que tem que receber (aumenta o debito e diminui o credito)
+ Passivo = O que tem que pagar (aumenta o credito e diminui o debito) - Obrigações
+ 
+*Débito está relacionado com contas do Ativo que representa bens e direitos (dinheiro, casa, carro, valores a receber, etc). 
+*Crédito está relacionado com contas do Passivo que representa suas obrigações com terceiros (empréstimos, financiamentos, contas a pagar, impostos a pagor, etc).

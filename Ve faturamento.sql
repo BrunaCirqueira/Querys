@@ -1,0 +1,1 @@
+select count(distinct U_FLX_IdFatSIGEM)  from oinv where CreateDate between '17-07-2018' and '17-07-2018' and UserSign=1 

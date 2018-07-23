@@ -1,4 +1,4 @@
-Ferramentas -> Consultas -> Consultas Usuario -> CAT 115 (Ver qual é a solicitação e filial) - Modelo = 19
+﻿Ferramentas -> Consultas -> Consultas Usuario -> CAT 115 (Ver qual é a solicitação e filial) - Modelo = 19
 
 Abrir a Tabela (\\192.168.67.118\Cont\Templates\) 
 Add uma planilha com mes e ano
@@ -11,7 +11,7 @@ Salvar o Arquivo como CSV  com o nome- ImportTerm01
 salvar em uma pasta(na rede) referenciando a data do template
 
 
-No Servidor 22 abrir o 
+No Servidor 22 abrir o Transfer, clicar em "Transactional Data" e depois em update, abrir Sales - AR Invoice - Selecionar o Documento e Deixar em Semicolon(para reconhecer ponto e virgula)
 
 
 =PROCV(C2;SRC!A:B;2;FALSO)

@@ -28,7 +28,7 @@ select DISTINCT
 FROM OINV t0
 	 INNER JOIN INV1 T1 ON T0.[DocEntry] = T1.[DocEntry] 
 where 
-	DocDueDate between '01-04-2017' and '30-04-2017' 
+	DocDueDate between '01-01-2016' and '30-04-2018' 
 	--AND [U_FLX_IdFatSIGEM] = 2081583
 group by 
     [U_FLX_IdFatSIGEM],DocStatus,BPLId,DocTotal,PaidToDate
@@ -73,8 +73,9 @@ FROM OINV t0
 	 INNER JOIN INV1 T1 ON T0.[DocEntry] = T1.[DocEntry] 
 	 
 where 
-	t0.DocDueDate between '01-01-2016' and '28-02-2018'
+	t0.DocDueDate between '01-01-2016' and '30-04-2018'
 	and t0.	UserSign2 <> '1' 
+	and T0.CANCELED = 'N'
 group by 
     t0.[U_FLX_IdFatSIGEM],t0.DocStatus,t0.BPLId,t0.DocTotal,t0.PaidToDate,T0.[DocEntry]
 

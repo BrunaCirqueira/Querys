@@ -1,0 +1,5 @@
+Fazer o Backup do BD AC.
+
+Entrar no 22 - Parar o Serviço - AcPessoalService.exe
+Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" e Executar - No 22 é apenas a Aplicação.
+

@@ -1,5 +1,43 @@
-Fazer o Backup do BD AC.
+0- Fazer o Backup do BD AC.
+1 - Entrar no 22 - Parar o Serviço - AcPessoalService.exe
+2 -Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" 
+3 - Executar instalador e após termino executar novamente no banco 192.168.67.85:ACF
+4 - Acessar 118 e repetir acessar a pasta "\\192.168.67.22\Fortes\Atualizadores" 
+5 - Seguir os passos do arquivo LEIAME
+6- Iniciar o Serviço - AcPessoalService.exe
 
-Entrar no 22 - Parar o Serviço - AcPessoalService.exe
-Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" e Executar - No 22 é apenas a Aplicação.
+
+
+
+
+ADVERTÊNCIA:
+Caso dê o erro: -> Arquivos "C:\Fortes\Atualizadores\FortesACAtualizador\Update.undo" 
+                   e "C:\Fortes\Atualizadores\FortesACAtualizador\Update.done" encontrados.
+Basta Entrar na pasta e renomear os arquivos para poder criar um novo.
+
+
+
+
+OBS: Passos da instalação
+Primeiro momento
+ Pasta do programa: C:\Fortes\AC\
+ Localização do arquivo de dados: C:\Fortes\AC\
+ Banco Firebird: 192.168.67.118/53052/:\Fortes\AC\AC.fdb
+
+Segundo momento
+ Pasta do programa: C:\Fortes\AC - Copy\
+ Localização do arquivo de dados: C:\Fortes\AC - Copy\
+ Banco Firebird: localhost/53052:\Fortes\AC - Copy\AClimpo.fdb
+
+Terceiro e quarto momento
+ Pasta do programa: C:\Fortes\AC\
+ Localização do arquivo de dados: C:\Fortes\AC\
+ Banco SQL: 192.168.67.85:AC e 192.168.67.85:ACF
+
+  
+
+
+
+
+
 

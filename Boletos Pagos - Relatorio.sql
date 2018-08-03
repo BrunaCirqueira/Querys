@@ -19,11 +19,12 @@ FROM
              INNER JOIN SBO_GERENCIADORA_PRODUCAO..INV1 T4 ON T2.[DocEntry] = T4.[DocEntry]
 
 WHERE 
-             T3.[DueDate] >= '02-07-2018'
-             AND  T3.[DueDate] <='02-07-2018'
-             AND T3.Situation = 1
+             --T3.[DueDate] >= '02-07-2018'
+             --AND  T3.[DueDate] <='02-07-2018'
+             --AND 
+			 T3.Situation = 1
              AND T3.Status = 4
-			 and T3.Ournumber = '0000000342378'
+			 and T3.Ournumber = '0000000380458'
 
 
 ORDER BY

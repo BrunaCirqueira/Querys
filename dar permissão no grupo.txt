@@ -1,0 +1,3 @@
+Para acessar as configurações dos usuarios e dar permissões no grupo
+
+Comando: lusrmgr.msc

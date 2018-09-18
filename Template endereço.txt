@@ -1,0 +1,10 @@
+TEMPLATE ENDEREÇO.
+
+1 - startar o TaxOne -> Configurações gerais -> Cadastro de entidade 
+2 - colocar o campo 'orig.Participante' para pegar os dados mestres(dados do Cliente) - pegar filial
+3 - atualizar o cadastro e pronto
+
+
+ps: Caso já esteja com a configuração correta
+    1 - rodar o Script de cliente no 22
+     

@@ -1,10 +1,11 @@
-0- Fazer o Backup do BD AC.
-1 - Entrar no 22 - Parar o Serviço - AcPessoalService.exe
-2 -Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" 
+bruna0- Fazer o Backup do BD AC.
+1 - Entrar no 22 - Parar o Serviço - AcPessoalService.exe e o Agente(fica rodando na area de trabalho)
+2 - Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" 
 3 - Executar instalador e após termino executar novamente no banco 192.168.67.85:ACF
 4 - Acessar 118 e repetir acessar a pasta "\\192.168.67.22\Fortes\Atualizadores" 
 5 - Seguir os passos do arquivo LEIAME
-6- Iniciar o Serviço - AcPessoalService.exe
+6 - Executar Instalador do Agente(FortesACAgenteInstalador.exe) em C:\Fortes\AC e clicar em instalar ou atualizar
+7-  Iniciar o Serviço - AcPessoalService.exe
 
 
 
@@ -33,6 +34,11 @@ Terceiro e quarto momento
  Pasta do programa: C:\Fortes\AC\
  Localização do arquivo de dados: C:\Fortes\AC\
  Banco SQL: 192.168.67.85:AC e 192.168.67.85:ACF
+
+
+
+
+Para o Ponto, basta fazer no servidor 22, sem necessidade de fazer no 118, poém todas as etapas tem que ser feitas(C:\Fortes\Ponto\ ---- 192.168.67.85:Ponto)
 
   
 

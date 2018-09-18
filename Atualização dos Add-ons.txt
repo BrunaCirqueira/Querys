@@ -3,7 +3,8 @@
  --> Baixar a versão do Add-on no 85
  --> Acessar o Sap e remover e depois Add os Add-ons - Habilitar para usuario manager, deslogar e logar para instalar novamente 
  --> Desistalar os serviços (monitores area de trabalho)
- --> Alterar o Serviço(invoice) para automatico, mudar o logon para administrator e recuperação como reiniciar srviço - Taxone deixar manual, pois causa lock
+ --> Alterar o Serviço(invoice) para automatico, mudar o logon para administrador(.\Administrador) e recuperação como reiniciar srviço - Taxone deixar manual, pois causa lock
  --> Iniciar os Add-ons e ir em cadastro de entidade e criar campos (fazer em um por vez)
  --> ir em Ajuda->suport Desk ->restaurar->restaurar aqrquivo de numeração
  --> Add para usuarios (Tributo,Mailton,Isabel,Carlos,Rosana(nfse auto),Kelly(nfse auto))
+

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1bfd2f05-d0f3-4718-9842-748ca27dbd5f" activeEnvironment="Default" name="Siam" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.4.0\bin\actions"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="e19e6c13-58c2-497a-b09e-dc8ad42608f7" wsaVersion="NONE" name="BasicHttpsBinding_INfse" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpsBinding_INfse" soapVersion="1_1" anonymous="optional" definition="https://ws.imap.org.br/siam/nfse.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ws.imap.org.br/siam/Nfse.svc</con:endpoint></con:endpoints><con:operation id="4d0f10f0-c4c2-4441-8155-6ed4d59e164a" isOneWay="false" action="http://tempuri.org/INfse/CancelarNfseEnvio" name="CancelarNfseEnvio" bindingOperationName="CancelarNfseEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8d64f195-6131-465e-bc3e-8ab2363d7cae" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:CancelarNfseEnvio>\r
+         <!--Optional:-->\r
+         <tem:param><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<CancelarNfseEnvio xmlns="https://ws.imap.org.br/siam/nfse.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Pedido>
+      <InfPedidoCancelamento Id="Cancelamento_201301">
+         <IdentificacaoNfse>
+            <Numero>1825958</Numero>
+            <CpfCnpj>
+               <Cnpj>05261547000164</Cnpj>
+            </CpfCnpj>
+            <InscricaoMunicipal>450021</InscricaoMunicipal>
+            <CodigoMunicipio>2310803</CodigoMunicipio>
+         </IdentificacaoNfse>
+         <CodigoCancelamento>1</CodigoCancelamento>
+         <MotivoCancelamento>Erro no preenchimento dos dados</MotivoCancelamento>
+      </InfPedidoCancelamento>
+   </Pedido>
+</CancelarNfseEnvio>]]]]>><![CDATA[</tem:param>\r
+      </tem:CancelarNfseEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/CancelarNfseEnvio"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="15e2f6ac-c23d-41bd-bc8f-6ab8668b4a3e" isOneWay="false" action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" name="ConsultarLoteRpsEnvio" bindingOperationName="ConsultarLoteRpsEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="94044582-e59b-4345-8bda-cbd8a1be5f4e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConsultarLoteRpsEnvio>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:ConsultarLoteRpsEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio"/></con:call></con:operation><con:operation id="db646dfa-391b-47c7-be9a-341e55d54515" isOneWay="false" action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" name="EnviarLoteRpsSincronoEnvio" bindingOperationName="EnviarLoteRpsSincronoEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7af302b9-9f83-4f47-bca9-a0fb5dc86e17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:EnviarLoteRpsSincronoEnvio>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:EnviarLoteRpsSincronoEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio"/></con:call></con:operation><con:operation id="51aa9c9f-2425-4fff-9fae-ee97eb88b1ab" isOneWay="false" action="http://tempuri.org/INfse/ValidarXml" name="ValidarXml" bindingOperationName="ValidarXml" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831d9ef9-9a80-49f4-9678-61ae9f9eab41" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ValidarXml>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:ValidarXml>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/ValidarXml"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ddbd3b6a-d41c-43bc-9ceb-ddc340447ba5" wsaVersion="NONE" name="BasicHttpBinding_INfse" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_INfse" soapVersion="1_1" anonymous="optional" definition="https://ws.imap.org.br/siam/nfse.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://ws.imap.org.br/siam/nfse.svc?wsdl"><con:part><con:url>https://ws.imap.org.br/siam/nfse.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Nfse" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_INfse_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="true"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/NfseSvc"/>
+      <xsd:import schemaLocation="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INfse_CancelarNfseEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfseEnvio"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_CancelarNfseEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfseEnvioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_CancelarNfseEnvio_SiamFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="q1:SiamFault" xmlns:q1="http://schemas.datacontract.org/2004/07/NfseSvc"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ConsultarLoteRpsEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLoteRpsEnvio"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ConsultarLoteRpsEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLoteRpsEnvioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ConsultarLoteRpsEnvio_SiamFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="q2:SiamFault" xmlns:q2="http://schemas.datacontract.org/2004/07/NfseSvc"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvio"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="q3:SiamFault" xmlns:q3="http://schemas.datacontract.org/2004/07/NfseSvc"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ValidarXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarXml"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ValidarXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarXmlResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfse_ValidarXml_SiamFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="q4:SiamFault" xmlns:q4="http://schemas.datacontract.org/2004/07/NfseSvc"/>
+  </wsdl:message>
+  <wsdl:portType name="INfse">
+    <wsdl:operation name="CancelarNfseEnvio">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvio" message="tns:INfse_CancelarNfseEnvio_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvioResponse" message="tns:INfse_CancelarNfseEnvio_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_CancelarNfseEnvio_SiamFaultFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLoteRpsEnvio">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" message="tns:INfse_ConsultarLoteRpsEnvio_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvioResponse" message="tns:INfse_ConsultarLoteRpsEnvio_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_ConsultarLoteRpsEnvio_SiamFaultFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" message="tns:INfse_EnviarLoteRpsSincronoEnvio_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse" message="tns:INfse_EnviarLoteRpsSincronoEnvio_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/ValidarXml" message="tns:INfse_ValidarXml_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/ValidarXmlResponse" message="tns:INfse_ValidarXml_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/ValidarXmlSiamFaultFault" name="SiamFaultFault" message="tns:INfse_ValidarXml_SiamFaultFault_FaultMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INfse" type="tns:INfse">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CancelarNfseEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/CancelarNfseEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLoteRpsEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarXml">
+      <soap:operation soapAction="http://tempuri.org/INfse/ValidarXml" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_INfse" type="tns:INfse">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_INfse_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CancelarNfseEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/CancelarNfseEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLoteRpsEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarXml">
+      <soap:operation soapAction="http://tempuri.org/INfse/ValidarXml" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault name="SiamFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Nfse">
+    <wsdl:port name="BasicHttpBinding_INfse" binding="tns:BasicHttpBinding_INfse">
+      <soap:address location="http://ws.imap.org.br/siam/Nfse.svc"/>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_INfse" binding="tns:BasicHttpsBinding_INfse">
+      <soap:address location="https://ws.imap.org.br/siam/Nfse.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/"/>
+  <xs:element name="CancelarNfseEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarNfseEnvioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelarNfseEnvioResult" nillable="true" type="q1:XMLMessage" xmlns:q1="http://schemas.datacontract.org/2004/07/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLoteRpsEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLoteRpsEnvioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarLoteRpsEnvioResult" nillable="true" type="q2:XMLMessage" xmlns:q2="http://schemas.datacontract.org/2004/07/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarLoteRpsSincronoEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarLoteRpsSincronoEnvioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EnviarLoteRpsSincronoEnvioResult" nillable="true" type="q3:XMLMessage" xmlns:q3="http://schemas.datacontract.org/2004/07/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidarXmlResult" nillable="true" type="q4:XMLMessage" xmlns:q4="http://schemas.datacontract.org/2004/07/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/">
+  <xs:complexType name="XMLMessage">
+    <xs:sequence>
+      <xs:element name="xmlString" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="XMLMessage" nillable="true" type="tns:XMLMessage"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NfseSvc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/NfseSvc">
+  <xs:complexType name="SiamFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SiamFault" nillable="true" type="tns:SiamFault"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws.imap.org.br/siam/Nfse.svc</con:endpoint></con:endpoints><con:operation id="a42f5a2b-5c78-4496-b2df-eb866bd0ead0" isOneWay="false" action="http://tempuri.org/INfse/CancelarNfseEnvio" name="CancelarNfseEnvio" bindingOperationName="CancelarNfseEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="122619d3-2c8e-4e74-b495-b5ccbe8302de" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:CancelarNfseEnvio>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:CancelarNfseEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/CancelarNfseEnvio"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d22a72a9-ca96-42c0-a3c5-d49ad5d1082e" isOneWay="false" action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" name="ConsultarLoteRpsEnvio" bindingOperationName="ConsultarLoteRpsEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9132544f-0b29-4ceb-aff7-a6fec83155c8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConsultarLoteRpsEnvio>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:ConsultarLoteRpsEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio"/></con:call></con:operation><con:operation id="51f328c2-a58c-4654-9c26-4d9723e6b5f1" isOneWay="false" action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" name="EnviarLoteRpsSincronoEnvio" bindingOperationName="EnviarLoteRpsSincronoEnvio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="67384778-8b47-4b8d-9460-599352991631" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:EnviarLoteRpsSincronoEnvio>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:EnviarLoteRpsSincronoEnvio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio"/></con:call></con:operation><con:operation id="200f4c17-c377-4421-99d3-c823fa289f1b" isOneWay="false" action="http://tempuri.org/INfse/ValidarXml" name="ValidarXml" bindingOperationName="ValidarXml" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="177f13c0-707a-498e-af3e-ca03b7f29d3c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.imap.org.br/siam/Nfse.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ValidarXml>\r
+         <!--Optional:-->\r
+         <tem:param>?</tem:param>\r
+      </tem:ValidarXml>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/INfse/ValidarXml"/></con:call></con:operation></con:interface><con:testSuite id="f171b0ff-9bad-4a50-bec6-43be2333848a" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="93c70c89-db09-49c8-8cb3-e1c85515a504" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

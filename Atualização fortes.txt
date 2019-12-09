@@ -1,11 +1,12 @@
-bruna0- Fazer o Backup do BD AC.
+0- Fazer o Backup do BD AC. PARAR O RH
 1 - Entrar no 22 - Parar o Serviço - AcPessoalService.exe e o Agente(fica rodando na area de trabalho)
 2 - Acessar o Fortes e Baixar o atualizador, Colocar na pasta "\\192.168.67.22\Fortes\Atualizadores" 
 3 - Executar instalador e após termino executar novamente no banco 192.168.67.85:ACF
-4 - Acessar 118 e repetir acessar a pasta "\\192.168.67.22\Fortes\Atualizadores" 
+4 - Acessar 118 e acessar a pasta "\\192.168.67.22\Fortes\Atualizadores" 
 5 - Seguir os passos do arquivo LEIAME
-6 - Executar Instalador do Agente(FortesACAgenteInstalador.exe) em C:\Fortes\AC e clicar em instalar ou atualizar
-7-  Iniciar o Serviço - AcPessoalService.exe
+6 - Executar Instalador do Agente(FortesACAgenteInstalador.exe) em C:\Fortes\AC e clicar em desintalar e instalar 
+7 - Executar CentralWebService e atualizar(CentralWebService.exe)
+8-  Iniciar o Serviço - AcPessoalService.exe
 
 
 

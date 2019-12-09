@@ -7,4 +7,8 @@
  --> Iniciar os Add-ons e ir em cadastro de entidade e criar campos (fazer em um por vez)
  --> ir em Ajuda->suport Desk ->restaurar->restaurar aqrquivo de numeração
  --> Add para usuarios (Tributo,Mailton,Isabel,Carlos,Rosana(nfse auto),Kelly(nfse auto))
+ --> Rodar os Scripts
+
+.\Administrador
+brisanet@2018
 
